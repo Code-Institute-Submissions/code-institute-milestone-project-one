@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
 
 
+.container-fluid{
+    padding: 0%;
+}
 /*-----------header---------*/
+
+.navbar{
+    margin-right: 0;
+}
+
 .navbar-background{
     background-color: black;
 
@@ -18,7 +26,6 @@
     letter-spacing: 5px;
     font-family: "Roboto Mono", sans-serif;
     text-transform: uppercase;
-    
 
 }
 
@@ -50,35 +57,18 @@
 
 /*----------/hero&cta-------*/
 
-
-
-.hero-image-container {
+.hero-image {
     height: 100vh;
- 
-    background: url(../images/dj-hero-image.jpg) no-repeat center; 
+    background: url(../images/dj-hero-image.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
-
-.opaque-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-    
-}
-
 
 .jumbotron{
     background-color:transparent;
@@ -86,7 +76,7 @@
 }
 
 .jumbotron-header{
-    margin-bottom: 200px;
+    margin-bottom: 130px;
     text-transform: uppercase;
     color: #fff;
     font-family: "PT Sans", sans-serif;
@@ -94,17 +84,122 @@
 
 }
 
+.buttons{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.services-button{
+    font-family: "PT Sans", sans-serif;
+    background-color:rgba(255, 255, 255, 0.8);
+    color: #000;
+    margin: 0 auto;
+    display: block;
+    float: right;
+}
+
+.contact-button{
+    font-family: "PT Sans", sans-serif;
+    background-color:rgba(255, 255, 255, 0.8);
+    color: #000;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 57px;
+    display: inline-block;
+    
+}
+
+@media only screen and (max-width : 768px) { 
+  .buttons{
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 85px;
+    padding-right: 85px;
+
+  }
+}
 
 /*-----------/hero&cta-------------*/
 
-/*------------footer--------------*/
+/*-----------FEATURES-------------*/
 
-.footer{
-    height: 50px;
-    background-color: black;
-    position: relative;
+
+.features{
+    
+    background: url(../images/mix-desk-stock-img2.jpg); 
+    background-size: cover;
+    padding: 25px 50px 25px 50px;
+    margin: 0 auto;
+    }
+
+.feature-heading{
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.feature-text{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 100;
+    text-transform: none;
+}
+
+/*.feature i{
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
 }
 
 
+/*-----------/FEATURES-------------*/
+
+
 /*------------footer--------------*/
 
+.footer-copyright{
+    padding-right: 15px;
+    font-family: "PT Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.social-links{
+    text-align: center;
+}
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+
+}
+
+.social-links li a i:hover {
+    background: grey;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif;
+    color: rgba(255, 255, 255, 0.4)
+}
+
+@media only screen and (max-width : 768px) { 
+    .page-footer{
+        position: fixed;
+    }
+}
