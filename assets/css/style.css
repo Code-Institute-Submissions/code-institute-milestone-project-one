@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
 
 
 /*GENERAL RULES*/
+
+hr{
+    color: rgba(255, 255, 255, 0.8);
+    background-color:  rgba(255, 255, 255, 0.8);
+}
 
 
 .uppercase{
     text-transform: uppercase;
 }
 
-.roboto-mono{
-    font-family: "Roboto Mono", sans-serif;
+.roboto-slab{
+    font-family: "Roboto Slab", sans-serif;
 }
 
 .pt-sans{
@@ -23,17 +28,13 @@
 
 /*-----------header---------*/
 
-/* .navbar{
-    margin: 0 auto;
-    
-} */
-
 .navbar-background{
-    background-color: black;
+    background-color: #263238;
+    box-shadow: 0 2px 9px -2px rgba(0,0,0,.8);
 
 }
 .navbar-brand{
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 7px;
@@ -46,8 +47,60 @@
     text-transform: uppercase;
 
 }
-
 /*-----------/header---------*/
+
+/*------------footer--------------*/
+
+footer {
+    background-color: #263238;
+    color: #fafafa;
+    min-height: 70px;
+    margin: 0;
+}
+
+.quick-links{
+    
+    text-decoration: none;
+    font-weight: 200;
+    text-align: center;
+   
+}
+
+.footer-heading, .copyright {
+    text-align: center;
+    font-weight: 300;
+}
+
+.social-links {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: transparent;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+
+}
+
+.social-links li a i:hover {
+    color: #4f5b62;
+}
+
+#footer-details{
+    padding: 20px;
+}
+
 
 /*-----------HOVER---------*/
 .hvr-grow {
@@ -68,15 +121,19 @@
 }
 /*-----------/HOVER---------*/
 
-
-
-
 /*----------/hero&cta-------*/
 
-.hero-image {
-    height: 100vh;
+.hero-image, .tinted-image {
+    height: 700px;
+    background: 
+    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
     
-    background: url(../images/dj-hero-image.jpg) no-repeat center center; 
+    url(../images/dj-hero-image.jpg) no-repeat ; 
+    background-position: 0px -200px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -96,7 +153,7 @@
     margin-bottom: 0 auto;
     text-transform: uppercase;
     color: #fff;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-weight: 500;
 
 }
@@ -127,15 +184,6 @@
     
 }
 
-@media only screen and (max-width : 768px) { 
-  .buttons{
-    display: inline-block;
-    padding-top: 30px;
-    padding-left: 85px;
-    padding-right: 85px;
-
-  }
-}
 
 /*-----------/hero&cta-------------*/
 
@@ -143,10 +191,19 @@
 
 
 .features{
+
+
     
-    background: url(../images/mix-desk-stock-img2.jpg); 
+  background: 
+    /* top, transparent  */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url(../images/mix-desk-stock-img2.jpg); 
     background-size: cover;
-    padding: 25px 50px 25px 50px;
+    padding: 70px 50px 0px 50px;
     margin: 0 auto;
     }
 
@@ -176,81 +233,27 @@
 
 /*-----------/FEATURES-------------*/
 
-
-/*------------footer--------------*/
-
-
-footer {
-    background-color: black;
-    color: #fafafa;
-    min-height: 70px;
-    margin: 0;
-}
-
-.quick-links{
-    
-    text-decoration: none;
-    font-weight: 200;
-    text-align: center;
-   
-}
-
-.footer-heading, .copyright {
-    text-align: center;
-    font-weight: 200;
-}
-
-.social-links {
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-
-}
-
-.social-links li a i:hover {
-    background: rgb(25, 39, 168, 0.3)
-}
-
-#footer-details{
-    padding: 20px;
-}
-
-
-
 /*------------ABOUTPAGE--------*/
 
 .bio-header{
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 .bio-text{
     
-    padding-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
     letter-spacing: 2px;
+    font-size: 19px;
     font-weight: 100;
     font-family: "PT Sans", sans-serif;
     color: white;
-    background-color: black;
+    background-color: #263238;
+
 }
 
 .bio-image-container{
@@ -267,8 +270,14 @@ footer {
 }
 
 .testimonials{
+    background: 
+    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
     
-    background: url(../images/mix-desk-stock-img.jpg) no-repeat center center;
+    url(../images/mix-desk-stock-img.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -298,12 +307,37 @@ footer {
 
 
 
-@media screen and (min-width: 375px) {
+@media only screen and (max-width: 600px) {
+    .hero-image, .tinted-image {
+    background: 
+    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    
+    url(../images/dj-hero-image.jpg) no-repeat center center ; 
+   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
     .testimonials-header{
         padding-bottom: 10px;
     }
     .testimonial-quote{
         padding: 20px;
+    }
+
+    .bio-text{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 
