@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
-<body>
+
+<body id="about-body">
 
 	<!-----------------------------------NAVBAR---------------------------------------->
 	<div class="nav-container container-fluid">
@@ -29,7 +30,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="ml-auto navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link hvr-grow" href="about.html">About</a>
+							<a class="active nav-link hvr-grow" href="about.html">About</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link hvr-grow" href="services.html">Services</a>
@@ -51,11 +52,13 @@
 
 	<section class="container-fluid">
 		<div class="row">
-			<div class="col-md-4 bio-image-container"></div>
-			<div class="col-md-8 bio-text">
+			
+
+			<div class="col bio-text ">
 				
-				<div class="testimonials-header uppercase center roboto-slab">
-					<h1>Bio</h1>
+				<div class="uppercase center roboto-slab">
+					<h1 class="bio-header">Bio</h1>
+                    <hr>
 				</div>
 
 				<p>Daryl Johnson is a freelance engineer based in London. So far in his short career, he
@@ -69,11 +72,13 @@
 					Across this time, Daryl worked with some of the top engineers and producers in the industry,
 					learning
 					many techniques first hand from the best in the business.</p>
+                    <hr>
 			</div>
 		</div>
 	</section>
 
 	<section class="testimonials container-fluid">
+    
 		<div class="row">
 			<div class="col-12 testimonials-header uppercase center roboto-slab">
 				<h1>Testimonials</h1>
@@ -112,7 +117,7 @@
 	<!-----------------------------------FOOTER---------------------------------------->
 	<footer class="container-fluid">
 		<div id="footer-details" class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-4 hide-mobile">
 				<h5 class="footer-heading uppercase roboto-slab">Quick links</h5>
 				<p class="quick-links uppercase inline-block">
 					<a href="#">Top |</a>
@@ -165,7 +170,7 @@
 
 				</ul>
 			</div>
-			<div class="copyright col-sm-4">
+			<div class="copyright col-sm-4 hide-mobile">
 				<h5 class="footer-heading uppercase roboto-slab">Copyright:2020</h5>
 				<p class="copyright inline-block">Daryl Johnson Ltd. ©
 

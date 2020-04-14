@@ -6,11 +6,13 @@
 hr{
     color: rgba(255, 255, 255, 0.8);
     background-color:  rgba(255, 255, 255, 0.8);
+    padding: 0;
 }
 
 
 .uppercase{
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .roboto-slab{
@@ -25,11 +27,16 @@ hr{
     text-align: center;
 }
 
+.img-boxed{
+    border: 45px solid #1A2226;
+
+}
+
 
 /*-----------header---------*/
 
 .navbar-background{
-    background-color: #263238;
+    background-color: #1A2226;
     box-shadow: 0 2px 9px -2px rgba(0,0,0,.8);
 
 }
@@ -52,7 +59,9 @@ hr{
 /*------------footer--------------*/
 
 footer {
-    background-color: #263238;
+   
+    background-color: #1A2226;
+    box-shadow: 9px 2px 9px -2px rgba(0,0,0,.8);
     color: #fafafa;
     min-height: 70px;
     margin: 0;
@@ -151,10 +160,10 @@ footer {
 
 .jumbotron-header{
     margin-bottom: 0 auto;
-    text-transform: uppercase;
+    
     color: #fff;
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 
 }
 
@@ -236,42 +245,64 @@ footer {
 /*------------ABOUTPAGE--------*/
 
 .bio-header{
+
+    padding: 20px;
+    padding-bottom: 5px;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     text-align: center;
+    
 }
 
 .bio-text{
     
-    
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
     text-align: center;
     letter-spacing: 2px;
     font-size: 19px;
     font-weight: 100;
     font-family: "PT Sans", sans-serif;
     color: white;
-    background-color: #263238;
+    
+    /* background-color: #1A2226; */
 
+}
+
+.bio-image{
+    
+    
+    width: 30%;
+    min-width: 500px;
 }
 
 .bio-image-container{
+    text-align: center;
+    padding: 50px;
+}
+
+#about-body{
+    background: 
     
-    height: 400px;
-    background: url(../images/darylbioportrait.jpg) no-repeat center center;
-    background-size: cover;
+    linear-gradient(
+      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69)
+    ),
+    
+    url(../images/darylfulldesk.jpg) no-repeat center center;
+    background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    display: flex;
+    display: block;
     margin: 0 auto;
-    
+
 }
 
 .testimonials{
-    background: 
-    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    /* background: 
+    
     linear-gradient(
       rgba(0, 0, 0, 0.55), 
       rgba(0, 0, 0, 0.55)
@@ -283,10 +314,10 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto; */
 
     color: white;
-}
+} */
 
 .testimonials-header{
     padding: 30px;
@@ -305,10 +336,41 @@ footer {
 
 /*-----------/ABOUTPAGE--------*/
 
+/*-----------SERVICES---------*/
+
+.process-container{
+
+    background-color: #1A2226;
+    padding: 100px 80px 100px 80px;
+    color: #fafafa;
+    font-weight: 200;
+}
+
+.services-divider{
+    padding-left: 85px;
+    padding-right: 85px;
+    background-color: #1A2226;
+}
+
+.pricing-container{
+    color: #fafafa;
+    background-color: #1A2226;
+    padding: 80px 100px 120px 100px;
+}
+
+.pricing-text{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 200;
+}
+
+/*-----------/SERVICES--------*/
 
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 1200px) {
     .hero-image, .tinted-image {
+    padding-top: 50px;
     background: 
     /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
     linear-gradient(
@@ -340,5 +402,13 @@ footer {
         padding-right: 20px;
     }
 
+    .hide-mobile{
+        display: none;
+    }
 
+    .pricing-container,
+    .process-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
