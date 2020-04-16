@@ -31,7 +31,95 @@ hr{
     text-align: center;
 }
 
+/*----------bodyrules------*/
 
+#index-body{
+    margin-bottom: 136px;
+}
+
+#about-body{
+
+    margin-bottom: 136px;
+    min-height: calc(100vh - 200px);
+
+
+    background: 
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69)
+    ),
+    
+    url(../images/darylfulldesk.jpg) no-repeat center center;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+
+
+
+   
+}
+
+#services-body{
+    background: 
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69)
+    ),
+    
+    url(../images/mix-desk-stock-img2.jpg) no-repeat;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+    margin-bottom: 136px;
+}
+
+#credits-body{
+    
+
+    background: 
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69)
+    ),
+    
+    url(../images/mix-desk-stock-img.jpg) no-repeat center;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+    margin-bottom: 136px;
+}
+
+#contact-body{
+
+    background: 
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69)
+    ),
+    
+    url(../images/mix-desk-stock-img2.jpg) no-repeat;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+    margin-bottom: 136px;
+
+}
+
+
+
+/*----------/bodyrules------*/
 
 
 /*-----------header---------*/
@@ -132,6 +220,8 @@ footer{
 /*-----------/HOVER---------*/
 
 /*----------/hero&cta-------*/
+
+
 
 .hero-image, .tinted-image {
     height: 700px;
@@ -270,23 +360,6 @@ footer{
 }
 
 
-#about-body{
-    background: 
-    
-    linear-gradient(
-      rgba(0, 0, 0, 0.69), 
-      rgba(0, 0, 0, 0.69)
-    ),
-    
-    url(../images/darylfulldesk.jpg) no-repeat center center;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-    margin: 0 auto;
-
-}
 
 
 .testimonials-header{
@@ -308,22 +381,6 @@ footer{
 
 /*-----------SERVICES---------*/
 
-#services-body{
-    background: 
-    
-    linear-gradient(
-      rgba(0, 0, 0, 0.69), 
-      rgba(0, 0, 0, 0.69)
-    ),
-    
-    url(../images/mix-desk-stock-img2.jpg) no-repeat;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-    margin: 0 auto;
-}
 
 
 .process-container{
@@ -369,22 +426,7 @@ td{
 
 /*------------CREDITS--------*/
 
-#credits-body{
-    background: 
-    
-    linear-gradient(
-      rgba(0, 0, 0, 0.69), 
-      rgba(0, 0, 0, 0.69)
-    ),
-    
-    url(../images/mix-desk-stock-img.jpg) no-repeat center;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-    margin: 0 auto;
-}
+
 
 .video-credit-container{
     padding: 50px;
@@ -429,27 +471,9 @@ display: block;
     text-shadow: 2px 2px #000;
 }
 
-#contact-body{
-
-    background: 
-    
-    linear-gradient(
-      rgba(0, 0, 0, 0.69), 
-      rgba(0, 0, 0, 0.69)
-    ),
-    
-    url(../images/mix-desk-stock-img2.jpg) no-repeat;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-    margin: 0 auto;
-    
-}
 
 .form-container{
-    padding: 80px 200px 80px 200px;
+    padding: 80px 80px 80px 80px;
 }
 
 
@@ -470,8 +494,7 @@ button[type="submit"] {
 /*-----------/CONTACT--------*/
 
 
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .hero-image, .tinted-image {
     padding-top: 50px;
     background: 
@@ -491,14 +514,13 @@ button[type="submit"] {
     align-items: center;
     justify-content: center;
     position: relative;
+    }
 }
 
-    .testimonials-header{
-        padding-bottom: 10px;
-    }
-    .testimonial-quote{
-        padding: 20px;
-    }
+@media only screen and (max-width: 992px) {
+    
+    
+
 
     .bio-text{
         padding-left: 20px;
@@ -510,7 +532,9 @@ button[type="submit"] {
     }
 
     .pricing-container,
-    .process-container{
+    .process-container,
+    .form-container,
+    .testimonials{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -520,13 +544,10 @@ button[type="submit"] {
     }
 
     .center-form {
-    padding-top: 30px;
-    min-height: 240px;
-    margin: 0 auto;
-    max-width: 50%;
+        padding-top: 20px;
+        min-height: 240px;
+        margin: unset;
     }
 }
 
     
-}
-
