@@ -211,6 +211,8 @@ footer{
 
 
 /*-----------HOVER---------*/
+
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -411,17 +413,18 @@ footer{
 
 
 .process-cards{
-    padding: 50px;
-}
-
-
-
-.container-process-card{
-    width: 400px;
-    
+    padding: 20px 80px 20px 80px;
     margin: auto;
-
 }
+
+
+.process-header{
+    padding: 20px 100px 5px 100px;
+    text-shadow: 2px 2px #000;
+}
+
+
+
 
 
 .card-background{
@@ -432,7 +435,7 @@ footer{
 
 .card-title,
 .card-text{
-    font-size: 20px;
+    font-size: 18px;
     color: #263238;
 
 
@@ -458,13 +461,20 @@ footer{
 }
 
 .pricing-container h1{
-    padding-bottom: 30px;
+   
     text-shadow: 2px 2px #000;
 }
 
 .pricing-text{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 19px;
+    font-weight: 100;
+
+
     text-shadow: 2px 2px #000;
 }
 
@@ -474,7 +484,10 @@ td{
 
 
 .paypal-logo{
-    max-width: 300px;
+    max-width: 400px;
+    min-width: 200px;
+    width: 50%;
+    height: auto;
 }
 /*-----------/SERVICES--------*/
 
@@ -492,7 +505,7 @@ td{
     min-height: 300px;
     /* color: #fafafa;
     text-shadow: 2px 2px #000; */
-    margin: 30px 50px 30px 50px;
+    margin: 30px 30px 30px 30px;
 }
 
 .credits-header{
@@ -582,21 +595,26 @@ button[type="submit"] {
 @media only screen and (max-width: 992px) {
 
 
+    .navbar-brand{
+        margin: auto;
+    }
 
-    .bio-text{
+
+    .bio-text,
+    .pricing-text{
         padding-left: 20px;
         padding-right: 20px;
     }
 
+   
 
-
+    
     .pricing-container,
-    .process-container,
     .form-container,
     .testimonials-header,
     .testimonials-container{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .social-container{
@@ -612,6 +630,8 @@ button[type="submit"] {
 
     .process-cards{
         display: block;
+        margin-bottom: 5PX;
+        padding: 20px 8px 20px 8px;
     }
 }
 
