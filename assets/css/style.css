@@ -6,7 +6,7 @@
 hr{
     color: rgba(255, 255, 255, 0.8);
     background-color:  rgba(255, 255, 255, 0.8);
-    padding: 0;
+    padding: 0px 100px 0px 100px;
 }
 
 .white{
@@ -34,22 +34,23 @@ hr{
 /*----------bodyrules------*/
 
 #index-body{
-    margin-bottom: 136px;
+    margin-bottom: 135px;
+    min-height: calc(100vh - 200px);
 }
 
 #about-body{
 
-    margin-bottom: 136px;
+    margin-bottom: 140px;
     min-height: calc(100vh - 200px);
 
 
-    background: 
-    
+    background:
+
     linear-gradient(
-      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69),
       rgba(0, 0, 0, 0.69)
     ),
-    
+
     url(../images/darylfulldesk.jpg) no-repeat center center;
     background-size: contain;
     -webkit-background-size: cover;
@@ -59,61 +60,70 @@ hr{
 
 
 
-   
+
 }
 
 #services-body{
-    background: 
-    
+
+    margin-bottom: 200px;
+    min-height: calc(100vh - 200px);
+
+    background:
+
     linear-gradient(
-      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69),
       rgba(0, 0, 0, 0.69)
     ),
-    
+
     url(../images/mix-desk-stock-img2.jpg) no-repeat;
     background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     display: block;
-    margin-bottom: 136px;
+
 }
 
 #credits-body{
-    
+    margin-bottom: 200px;
+    min-height: calc(100vh - 200px);
 
-    background: 
-    
+    background:
+
     linear-gradient(
-      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69),
       rgba(0, 0, 0, 0.69)
     ),
-    
+
     url(../images/mix-desk-stock-img.jpg) no-repeat center;
     background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     display: block;
-    margin-bottom: 136px;
+
 }
 
 #contact-body{
 
-    background: 
-    
+    margin-bottom: 200px;
+    min-height: calc(100vh - 200px);
+
+
+    background:
+
     linear-gradient(
-      rgba(0, 0, 0, 0.69), 
+      rgba(0, 0, 0, 0.69),
       rgba(0, 0, 0, 0.69)
     ),
-    
+
     url(../images/mix-desk-stock-img2.jpg) no-repeat;
     background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     display: block;
-    margin-bottom: 136px;
+
 
 }
 
@@ -148,20 +158,20 @@ hr{
 /*------------footer--------------*/
 
 footer{
-   
+
     background-color: #1A2226;
     box-shadow: 9px 2px 9px -2px rgba(0,0,0,.8);
     color: #fafafa;
     min-height: 70px;
-    margin: 0;
+
 }
 
 .quick-links{
-    
+
     text-decoration: none;
     font-weight: 200;
     text-align: center;
-   
+
 }
 
 .footer-heading, .copyright {
@@ -225,14 +235,14 @@ footer{
 
 .hero-image, .tinted-image {
     height: 700px;
-    background: 
-    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    background:
+    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
     linear-gradient(
-      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    
-    url(../images/dj-hero-image.jpg) no-repeat ; 
+
+    url(../images/dj-hero-image.jpg) no-repeat ;
     background-position: 0px -200px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -251,7 +261,7 @@ footer{
 
 .jumbotron-header{
     margin-bottom: 0 auto;
-    
+
     color: #fff;
     font-family: "Roboto Slab", sans-serif;
     font-weight: 400;
@@ -277,7 +287,7 @@ footer{
     padding-left: 60px;
     padding-right: 57px;
     display: inline-block;
-    
+
 }
 
 
@@ -289,15 +299,15 @@ footer{
 .features{
 
 
-    
-  background: 
-    /* top, transparent  */ 
+
+  background:
+    /* top, transparent  */
     linear-gradient(
-      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    
-    url(../images/mix-desk-stock-img2.jpg); 
+
+    url(../images/mix-desk-stock-img2.jpg);
     background-size: cover;
     padding: 70px 50px 0px 50px;
     margin: 0 auto;
@@ -311,7 +321,7 @@ footer{
     color: #fafafa;
     text-align: center;
     margin-bottom: 40px;
-    
+
 }
 
 .feature-text{
@@ -332,18 +342,20 @@ footer{
 
 /*------------ABOUTPAGE--------*/
 
-.bio-header{
+.bio-header,
+.testimonials-header{
 
-    padding: 20px;
+    padding: 20px 100px 20px 100px;
     padding-bottom: 5px;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    
+
 }
 
-.bio-text{
-    
+.bio-text,
+.testimonials-text{
+
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 10px;
@@ -351,31 +363,39 @@ footer{
     letter-spacing: 2px;
     font-size: 19px;
     font-weight: 100;
-    font-family: "PT Sans", sans-serif;
-    color: white;
+
+
     text-shadow: 2px 2px #000;
-    
+
     /* background-color: #1A2226; */
 
 }
 
 
-
-
-.testimonials-header{
-    padding: 30px;
-
+.testimonials-container{
+    padding: 20px 120px 20px 120px;
 }
 
-.testimonials{
-    padding: 0px 100px 50px 100px;
-    color: #fafafa;
-    text-shadow: 2px 2px #000;
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.quote-decoration{
+
+.blockquote{
+    font-size: 18px;
     font-style: italic;
 }
+
+
+
+
+
+
+
+
 
 /*-----------/ABOUTPAGE--------*/
 
@@ -383,45 +403,79 @@ footer{
 
 
 
-.process-container{
 
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.process-cards{
+    padding: 50px;
+}
+
+
+
+.container-process-card{
+    width: 400px;
     
-    padding: 50px 80px 30px 80px;
-    color: #fafafa;
-    font-weight: 200;
-    text-shadow: 2px 2px #000;
+    margin: auto;
+
+}
+
+
+.card-background{
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.card-title,
+.card-text{
+    font-size: 20px;
+    color: #263238;
+
+
 }
 
 .icon{
+    margin: auto;
+    color: #263238;
     font-size: 50px;
 }
 
 .services-divider{
-    padding-left: 85px;
-    padding-right: 85px;
-   
+    padding-left: 100px;
+    padding-right: 100px;
+
 }
 
 .pricing-container{
     color: #fafafa;
     /* background-color: #263238; */
-    padding: 30px 100px 0px 100px;
-    text-shadow: 2px 2px #000;
+    padding: 30px 150px 0px 150px;
+
 }
 
 .pricing-container h1{
     padding-bottom: 30px;
+    text-shadow: 2px 2px #000;
 }
 
 .pricing-text{
     font-family: "PT Sans", sans-serif;
     font-weight: 200;
+    text-shadow: 2px 2px #000;
 }
 
 td{
     padding: 0px 0px 30px 0px;
 }
 
+
+.paypal-logo{
+    max-width: 300px;
+}
 /*-----------/SERVICES--------*/
 
 /*------------CREDITS--------*/
@@ -434,10 +488,11 @@ td{
 
 
 .table-container{
-    
-    color: #fafafa;
-    text-shadow: 2px 2px #000;
-    padding: 30px 50px 100px 50px;
+
+    min-height: 300px;
+    /* color: #fafafa;
+    text-shadow: 2px 2px #000; */
+    margin: 30px 50px 30px 50px;
 }
 
 .credits-header{
@@ -478,9 +533,9 @@ display: block;
 
 
 .center-form {
-    
+
     margin: 0 auto;
-   
+
 
 }
 
@@ -494,18 +549,21 @@ button[type="submit"] {
 /*-----------/CONTACT--------*/
 
 
+
+/*-----------MEDIAQUERIES--------*/
+
 @media only screen and (max-width: 1200px) {
     .hero-image, .tinted-image {
     padding-top: 50px;
-    background: 
-    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */ 
+    background:
+    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
     linear-gradient(
-      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    
-    url(../images/dj-hero-image.jpg) no-repeat center center ; 
-   
+
+    url(../images/dj-hero-image.jpg) no-repeat center center ;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -515,11 +573,14 @@ button[type="submit"] {
     justify-content: center;
     position: relative;
     }
-}
+
+
+
+
+
 
 @media only screen and (max-width: 992px) {
-    
-    
+
 
 
     .bio-text{
@@ -527,16 +588,15 @@ button[type="submit"] {
         padding-right: 20px;
     }
 
-    .hide-mobile{
-        display: none;
-    }
+
 
     .pricing-container,
     .process-container,
     .form-container,
-    .testimonials{
-        padding-left: 20px;
-        padding-right: 20px;
+    .testimonials-header,
+    .testimonials-container{
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .social-container{
@@ -546,8 +606,22 @@ button[type="submit"] {
     .center-form {
         padding-top: 20px;
         min-height: 240px;
-        margin: unset;
+
+    }
+
+
+    .process-cards{
+        display: block;
     }
 }
 
-    
+@media only screen and (max-width: 575px) {
+
+    .hide-mobile{
+
+        display: none;
+
+    }
+}
+
+
