@@ -44,7 +44,9 @@ In this project I used several technologies to achieve my end result:
 * Languages - HTML5 & CSS3
 * Frameworks - Bootstrap 4
 
-* Libraries - Unsplash.com for one avatar and two background images, FontAwesome for icons, Hover.css for hover effects, Google Fonts for typography and the jQuery API to facilitate the navigation bar collapsible menu.
+### Libraries -
+
+Unsplash.com for one avatar and two background images, FontAwesome.com for icons, Hover.css for hover effects, Google Fonts for typography and the jQuery API to facilitate the navigation bar collapsible menu.
 * https://unsplash.com/
 * https://fontawesome.com/
 * https://ianlunn.github.io/Hover/
@@ -75,7 +77,7 @@ To achieve the deployment, GitHub makes it as easy as entering the settings of t
 
 All text content for the site was provided by the site subject Daryl Johnson, including the testimonials from clients.
 
-###Media 
+### Media 
 3 photos for this site were obtained from Unsplash.com, and these are the credits due to the photographers: 
 * Mike Larson testimonial avatar - Photo by Jacek Sniecikowski on Unsplash
 * Black and White mix desk fader image - Photo by Leo Wieling on Unsplash
