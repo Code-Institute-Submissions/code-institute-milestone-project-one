@@ -14,8 +14,14 @@ Atlas Falls (Band) - Engineer Client, London GB
 
 
 
-
-
 (mike larson) Photo by Jacek Sniecikowski on Unsplash
 (api desk) Photo by Yassine Khalfalli on Unsplash
 grey faders 
+
+
+/* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+
+
+
+
+

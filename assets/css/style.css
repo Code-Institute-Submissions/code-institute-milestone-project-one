@@ -1,4 +1,4 @@
-	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
 
 /*GENERAL RULES*/
 
@@ -10,6 +10,10 @@ hr {
 
 .white {
 	color: #fafafa;
+}
+
+.opaque-white {
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .uppercase {
@@ -32,15 +36,15 @@ hr {
 
 /*----------bodyrules------*/
 
-#index-body {
+.index-body-container {
 	margin-bottom: 135px;
 	min-height: calc(100vh - 200px);
 }
 
-#about-body {
-	margin-bottom: 140px;
+.about-body-container {
+	margin-bottom: 135px;
 	min-height: calc(100vh - 200px);
-	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/darylfulldesk.jpg) no-repeat center center;
+	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/daryl-full-desk.jpg) no-repeat center center;
 	background-size: contain;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -48,10 +52,12 @@ hr {
 	display: block;
 }
 
-#services-body {
-	margin-bottom: 200px;
+.services-body-container {
+	padding-bottom: 30px;
+	margin-bottom: 130px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
+    object-fit: cover;
 	background-size: contain;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -59,8 +65,8 @@ hr {
 	display: block;
 }
 
-#credits-body {
-	margin-bottom: 200px;
+.credits-body-container {
+	margin-bottom: 130px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img.jpg) no-repeat center;
 	background-size: contain;
@@ -70,8 +76,9 @@ hr {
 	display: block;
 }
 
-#contact-body {
-	margin-bottom: 200px;
+.contact-body-container {
+    padding-bottom: 300px;
+	margin-bottom: 130px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
 	background-size: contain;
@@ -163,7 +170,7 @@ footer {
 /*-----------HOVER---------*/
 
 .hvr-grow {
-	display: inline-block;
+	display: flex;
 	vertical-align: middle;
 	transform: translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -187,9 +194,8 @@ footer {
 
 .hero-image,
 .tinted-image {
-	height: 700px;
-	background: /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
-	linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/dj-hero-image.jpg) no-repeat;
+	height: 100vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/daryl-hero-image.jpg) no-repeat;
 	background-position: 0px -200px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -230,16 +236,20 @@ footer {
 /*-----------/hero&cta-------------*/
 
 
-/*-----------FEATURES-------------*/
+/*------------ABOUTPAGE--------*/
 
-.features-card {
-	padding: 20px 80px 20px 80px;
+.features-container {
+	padding: 20px 180px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
 }
 
+.feature-card {
+	margin-bottom: 10px;
+}
+
 .features-text {
-	padding: 15px 5px 0px 5px;
+	padding: 20px 10px 10px 10px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 100;
 	letter-spacing: 1px;
@@ -247,15 +257,16 @@ footer {
 	text-align: center;
 }
 
+.testimonials-container {
+	padding: 20px 180px;
+}
 
-/*-----------/FEATURES-------------*/
+.bio-container {
+	padding: 20px 180px;
+}
 
-
-/*------------ABOUTPAGE--------*/
-
-.bio-header,
 .testimonials-header {
-	padding: 20px 100px 20px 100px;
+	padding: 20px 180px;
 	padding-bottom: 5px;
 	font-family: "Roboto Slab", sans-serif;
 	text-transform: uppercase;
@@ -264,8 +275,6 @@ footer {
 
 .bio-text,
 .testimonials-text {
-	padding-left: 100px;
-	padding-right: 100px;
 	padding-top: 10px;
 	text-align: center;
 	letter-spacing: 2px;
@@ -273,10 +282,6 @@ footer {
 	font-weight: 100;
 	text-shadow: 2px 2px #000;
 	/* background-color: #1A2226; */
-}
-
-.testimonials-container {
-	padding: 20px 120px 20px 120px;
 }
 
 .testimonials-card {
@@ -297,17 +302,18 @@ footer {
 /*-----------SERVICES---------*/
 
 .process-cards {
-	padding: 20px 80px 20px 80px;
+	padding: 20px 180px 20px 180px;
 	margin: auto;
 }
 
-.process-header {
-	padding: 20px 100px 5px 100px;
-	text-shadow: 2px 2px #000;
+.process-card-padding {
+	margin-bottom: 10px;
+	padding: 20px 10px 10px 10px;
 }
 
-.card-background {
-	background-color: rgba(255, 255, 255, 0.8);
+.process-header {
+	padding: 20px 180px 5px 180px;
+	text-shadow: 2px 2px #000;
 }
 
 .card-title,
@@ -323,14 +329,14 @@ footer {
 }
 
 .services-divider {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 180px;
+	padding-right: 180px;
 }
 
 .pricing-container {
 	color: #fafafa;
-	/* background-color: #263238; */
-	padding: 30px 150px 0px 150px;
+	
+	padding: 30px 180px 0px 180px;
 }
 
 .pricing-container h1 {
@@ -338,8 +344,6 @@ footer {
 }
 
 .pricing-text {
-	padding-left: 100px;
-	padding-right: 100px;
 	padding-top: 10px;
 	text-align: center;
 	letter-spacing: 2px;
@@ -371,13 +375,12 @@ td {
 
 .table-container {
 	min-height: 300px;
-	/* color: #fafafa;
-    text-shadow: 2px 2px #000; */
+	
 	margin: 30px 30px 30px 30px;
 }
 
 .credits-header {
-    padding: 20px 100px 10px 100px;
+	padding: 20px 100px 10px 100px;
 	color: #fafafa;
 	text-shadow: 2px 2px #000;
 }
@@ -410,6 +413,7 @@ tbody {
 	padding: 80px 80px 80px 80px;
 }
 
+
 .center-form {
 	margin: 0 auto;
 }
@@ -427,12 +431,11 @@ button[type="submit"] {
 
 /*-----------MEDIAQUERIES--------*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1570px) {
 	.hero-image,
 	.tinted-image {
 		padding-top: 50px;
-		background: /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
-		linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/dj-hero-image.jpg) no-repeat center center;
+		background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/daryl-hero-image.jpg) no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -442,37 +445,50 @@ button[type="submit"] {
 		justify-content: center;
 		position: relative;
 	}
+}
+
 @media only screen and (max-width: 992px) {
-		.navbar-brand {
-			margin: auto;
-		}
-		.bio-text,
-		.pricing-text {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-		.pricing-container,
-		.form-container,
-		.testimonials-header,
-		.testimonials-container {
-			padding-left: 40px;
-			padding-right: 40px;
-		}
-		.social-container {
-			text-align: center;
-		}
-		.center-form {
-			padding-top: 20px;
-			min-height: 240px;
-		}
-		.features-card,
-		.process-cards {
-			display: block;
-			padding: 20px 8px 20px 8px;
-		}
+	h1 {
+		font-size: 30px
 	}
+	.navbar-brand {
+		margin: auto;
+	}
+	.bio-text,
+	.pricing-text {
+		font-size: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.bio-container,
+	.pricing-container,
+	.form-container,
+	.testimonials-header,
+	.testimonials-container,
+	.credits-header {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.social-container {
+		text-align: center;
+	}
+	.center-form {
+		padding-top: 20px;
+		min-height: 240px;
+	}
+    
+}
+
+@media only screen and (max-width: 1300px){
+    .features-container,
+	.process-cards {
+		display: block;
+		padding: 20px 30px;
+	}
+}
+
 @media only screen and (max-width: 575px) {
-		.hide-mobile {
-			display: none;
-		}
+	.hide-mobile {
+		display: none;
 	}
+}
