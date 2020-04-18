@@ -1,132 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
-
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700|PT+Sans:100,200,300,400,500,600,700');
 
 /*GENERAL RULES*/
 
-hr{
-    color: rgba(255, 255, 255, 0.8);
-    background-color:  rgba(255, 255, 255, 0.8);
-    padding: 0px 100px 0px 100px;
+hr {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0px 100px 0px 100px;
 }
 
-.white{
-    color: #fafafa;
+.white {
+	color: #fafafa;
 }
 
-
-.uppercase{
-    text-transform: uppercase;
-    font-weight: 400;
+.uppercase {
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
-.roboto-slab{
-    font-family: "Roboto Slab", sans-serif;
+.roboto-slab {
+	font-family: "Roboto Slab", sans-serif;
 }
 
-.pt-sans{
-    font-family: "PT Sans", sans-serif;
+.pt-sans {
+	font-family: "PT Sans", sans-serif;
 }
 
-.center{
-    text-align: center;
+.center {
+	text-align: center;
 }
+
 
 /*----------bodyrules------*/
 
-#index-body{
-    margin-bottom: 135px;
-    min-height: calc(100vh - 200px);
+#index-body {
+	margin-bottom: 135px;
+	min-height: calc(100vh - 200px);
 }
 
-#about-body{
-
-    margin-bottom: 140px;
-    min-height: calc(100vh - 200px);
-
-
-    background:
-
-    linear-gradient(
-      rgba(0, 0, 0, 0.69),
-      rgba(0, 0, 0, 0.69)
-    ),
-
-    url(../images/darylfulldesk.jpg) no-repeat center center;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-
-
-
-
+#about-body {
+	margin-bottom: 140px;
+	min-height: calc(100vh - 200px);
+	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/darylfulldesk.jpg) no-repeat center center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: block;
 }
 
-#services-body{
-
-    margin-bottom: 200px;
-    min-height: calc(100vh - 200px);
-
-    background:
-
-    linear-gradient(
-      rgba(0, 0, 0, 0.69),
-      rgba(0, 0, 0, 0.69)
-    ),
-
-    url(../images/mix-desk-stock-img2.jpg) no-repeat;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-
+#services-body {
+	margin-bottom: 200px;
+	min-height: calc(100vh - 200px);
+	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: block;
 }
 
-#credits-body{
-    margin-bottom: 200px;
-    min-height: calc(100vh - 200px);
-
-    background:
-
-    linear-gradient(
-      rgba(0, 0, 0, 0.69),
-      rgba(0, 0, 0, 0.69)
-    ),
-
-    url(../images/mix-desk-stock-img.jpg) no-repeat center;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-
+#credits-body {
+	margin-bottom: 200px;
+	min-height: calc(100vh - 200px);
+	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img.jpg) no-repeat center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: block;
 }
 
-#contact-body{
-
-    margin-bottom: 200px;
-    min-height: calc(100vh - 200px);
-
-
-    background:
-
-    linear-gradient(
-      rgba(0, 0, 0, 0.69),
-      rgba(0, 0, 0, 0.69)
-    ),
-
-    url(../images/mix-desk-stock-img2.jpg) no-repeat;
-    background-size: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-
-
+#contact-body {
+	margin-bottom: 200px;
+	min-height: calc(100vh - 200px);
+	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: block;
 }
-
 
 
 /*----------/bodyrules------*/
@@ -134,477 +87,391 @@ hr{
 
 /*-----------header---------*/
 
-.navbar-background{
-    background-color: #1A2226;
-    box-shadow: 0 2px 9px -2px rgba(0,0,0,.8);
-
-}
-.navbar-brand{
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-
+.navbar-background {
+	background-color: #1A2226;
+	box-shadow: 0 2px 9px -2px rgba(0, 0, 0, .8);
 }
 
-.nav-item{
-    letter-spacing: 5px;
-    font-family: "Roboto Mono", sans-serif;
-    text-transform: uppercase;
-
+.navbar-brand {
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 7px;
 }
+
+.nav-item {
+	letter-spacing: 5px;
+	font-family: "Roboto Mono", sans-serif;
+	text-transform: uppercase;
+}
+
+
 /*-----------/header---------*/
+
 
 /*------------footer--------------*/
 
-footer{
-
-    background-color: #1A2226;
-    box-shadow: 9px 2px 9px -2px rgba(0,0,0,.8);
-    color: #fafafa;
-    min-height: 70px;
-
+footer {
+	background-color: #1A2226;
+	box-shadow: 9px 2px 9px -2px rgba(0, 0, 0, .8);
+	color: #fafafa;
+	min-height: 70px;
 }
 
-.quick-links{
-
-    text-decoration: none;
-    font-weight: 200;
-    text-align: center;
-
+.quick-links {
+	text-decoration: none;
+	font-weight: 200;
+	text-align: center;
 }
 
-.footer-heading, .copyright {
-    text-align: center;
-    font-weight: 300;
+.footer-heading,
+.copyright {
+	text-align: center;
+	font-weight: 300;
 }
 
 .social-links {
-    padding-bottom: 15px;
-    text-align: center;
+	padding-bottom: 15px;
+	text-align: center;
 }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 30px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: transparent;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-
+	width: 32px;
+	height: 32px;
+	padding: 12px 0;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 7px;
+	text-align: center;
+	color: #fafafa;
+	background: transparent;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    color: #4f5b62;
+	color: #4f5b62;
 }
 
-#footer-details{
-    padding: 20px;
+#footer-details {
+	padding: 20px;
 }
 
 
 /*-----------HOVER---------*/
 
-
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
 }
 
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
+
+
 /*-----------/HOVER---------*/
+
 
 /*----------/hero&cta-------*/
 
-
-
-.hero-image, .tinted-image {
-    height: 700px;
-    background:
-    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
-    linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
-    ),
-
-    url(../images/dj-hero-image.jpg) no-repeat ;
-    background-position: 0px -200px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.hero-image,
+.tinted-image {
+	height: 700px;
+	background: /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+	linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/dj-hero-image.jpg) no-repeat;
+	background-position: 0px -200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
-.jumbotron{
-    background-color:transparent;
-    padding: 0;
+.jumbotron {
+	background-color: transparent;
+	padding: 0;
 }
 
-.jumbotron-header{
-    margin-bottom: 0 auto;
-
-    color: #fff;
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 400;
-    text-shadow: 2px 2px #4f5b62;
-
+.jumbotron-header {
+	margin-bottom: 0 auto;
+	color: #fff;
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 400;
+	text-shadow: 2px 2px #4f5b62;
 }
 
-.btn{
-    min-width: 200px;
-    max-width: 200px;
-    min-height: 70px;
-    padding: 35px;
-    margin: auto;
-    background-color: #1A2226;
-    font-size: 19px;
-    color: #fafafa;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+.btn {
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 70px;
+	padding: 35px;
+	margin: auto;
+	background-color: #1A2226;
+	font-size: 19px;
+	color: #fafafa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 
 /*-----------/hero&cta-------------*/
 
+
 /*-----------FEATURES-------------*/
 
-
-.features-card{  
-    padding: 20px 80px 20px 80px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 0 auto;
-    }
-
-.features-text{
-
-    padding: 15px 5px 0px 5px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 100;
-    letter-spacing: 1px;
-    color: #212529;
-    text-align: center;
-   
-
+.features-card {
+	padding: 20px 80px 20px 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
 }
 
+.features-text {
+	padding: 15px 5px 0px 5px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #212529;
+	text-align: center;
+}
 
 
 /*-----------/FEATURES-------------*/
 
+
 /*------------ABOUTPAGE--------*/
 
 .bio-header,
-.testimonials-header{
-
-    padding: 20px 100px 20px 100px;
-    padding-bottom: 5px;
-    font-family: "Roboto Slab", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-
+.testimonials-header {
+	padding: 20px 100px 20px 100px;
+	padding-bottom: 5px;
+	font-family: "Roboto Slab", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .bio-text,
-.testimonials-text{
-
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 19px;
-    font-weight: 100;
-
-
-    text-shadow: 2px 2px #000;
-
-    /* background-color: #1A2226; */
-
+.testimonials-text {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 19px;
+	font-weight: 100;
+	text-shadow: 2px 2px #000;
+	/* background-color: #1A2226; */
 }
 
-
-.testimonials-container{
-    padding: 20px 120px 20px 120px;
+.testimonials-container {
+	padding: 20px 120px 20px 120px;
 }
 
-
-.testimonials-card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 10px 15px 10px 15px;
-    background-color: rgba(255, 255, 255, 0.8);
+.testimonials-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px 15px 10px 15px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
-
-.blockquote{
-    font-size: 18px;
-    font-style: italic;
+.blockquote {
+	font-size: 18px;
+	font-style: italic;
 }
-
-
-
-
-
-
-
 
 
 /*-----------/ABOUTPAGE--------*/
 
+
 /*-----------SERVICES---------*/
 
-
-
-
-
-
-
-.process-cards{
-    padding: 20px 80px 20px 80px;
-    margin: auto;
+.process-cards {
+	padding: 20px 80px 20px 80px;
+	margin: auto;
 }
 
-
-.process-header{
-    padding: 20px 100px 5px 100px;
-    text-shadow: 2px 2px #000;
+.process-header {
+	padding: 20px 100px 5px 100px;
+	text-shadow: 2px 2px #000;
 }
 
-
-
-
-
-.card-background{
-
-    background-color: rgba(255, 255, 255, 0.8);
-
+.card-background {
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .card-title,
-.card-text{
-    font-size: 18px;
-    color: #263238;
-
-
+.card-text {
+	font-size: 18px;
+	color: #263238;
 }
 
-.icon{
-    margin: auto;
-    color: #263238;
-    font-size: 50px;
+.icon {
+	margin: auto;
+	color: #263238;
+	font-size: 50px;
 }
 
-.services-divider{
-    padding-left: 100px;
-    padding-right: 100px;
-
+.services-divider {
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
-.pricing-container{
-    color: #fafafa;
-    /* background-color: #263238; */
-    padding: 30px 150px 0px 150px;
-
+.pricing-container {
+	color: #fafafa;
+	/* background-color: #263238; */
+	padding: 30px 150px 0px 150px;
 }
 
-.pricing-container h1{
-   
-    text-shadow: 2px 2px #000;
+.pricing-container h1 {
+	text-shadow: 2px 2px #000;
 }
 
-.pricing-text{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 19px;
-    font-weight: 100;
-
-
-    text-shadow: 2px 2px #000;
+.pricing-text {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 19px;
+	font-weight: 100;
+	text-shadow: 2px 2px #000;
 }
 
-td{
-    padding: 0px 0px 30px 0px;
+td {
+	padding: 0px 0px 30px 0px;
+}
+
+.paypal-logo {
+	max-width: 400px;
+	min-width: 200px;
+	width: 50%;
+	height: auto;
 }
 
 
-.paypal-logo{
-    max-width: 400px;
-    min-width: 200px;
-    width: 50%;
-    height: auto;
-}
 /*-----------/SERVICES--------*/
+
 
 /*------------CREDITS--------*/
 
-
-
-.video-credit-container{
-    padding: 50px;
+.video-credit-container {
+	padding: 50px;
 }
 
-
-.table-container{
-
-    min-height: 300px;
-    /* color: #fafafa;
+.table-container {
+	min-height: 300px;
+	/* color: #fafafa;
     text-shadow: 2px 2px #000; */
-    margin: 30px 30px 30px 30px;
+	margin: 30px 30px 30px 30px;
 }
 
-.credits-header{
-    color: #fafafa;
-    text-shadow: 2px 2px #000;
-
+.credits-header {
+	color: #fafafa;
+	text-shadow: 2px 2px #000;
 }
 
-
-tbody{
-    font-family: "PT Sans", sans-serif;
-
+tbody {
+	font-family: "PT Sans", sans-serif;
 }
-
 
 .my-custom-scrollbar {
-position: relative;
-height: 200px;
-overflow: auto;
+	position: relative;
+	height: 200px;
+	overflow: auto;
 }
+
 .table-wrapper-scroll-y {
-display: block;
+	display: block;
 }
+
 
 /*-----------/CREDITS--------*/
 
 
 /*-----------CONTACT--------*/
 
-.contact-heading{
-    text-shadow: 2px 2px #000;
+.contact-heading {
+	text-shadow: 2px 2px #000;
 }
 
-
-.form-container{
-    padding: 80px 80px 80px 80px;
+.form-container {
+	padding: 80px 80px 80px 80px;
 }
-
 
 .center-form {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #1A2226;
-
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: #fafafa;
+	background-color: #1A2226;
 }
-/*-----------/CONTACT--------*/
 
+
+/*-----------/CONTACT--------*/
 
 
 /*-----------MEDIAQUERIES--------*/
 
 @media only screen and (max-width: 1200px) {
-    .hero-image, .tinted-image {
-    padding-top: 50px;
-    background:
-    /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
-    linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
-    ),
-
-    url(../images/dj-hero-image.jpg) no-repeat center center ;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    }
-
-
-
-
-
-
+	.hero-image,
+	.tinted-image {
+		padding-top: 50px;
+		background: /* credit - https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+		linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/dj-hero-image.jpg) no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
 @media only screen and (max-width: 992px) {
-
-
-    .navbar-brand{
-        margin: auto;
-    }
-
-
-    .bio-text,
-    .pricing-text{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-   
-
-    
-    .pricing-container,
-    .form-container,
-    .testimonials-header,
-    .testimonials-container{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .social-container{
-        text-align: center;
-    }
-
-    .center-form {
-        padding-top: 20px;
-        min-height: 240px;
-
-    }
-
-    .features-card,
-    .process-cards{
-        display: block;
-      
-        padding: 20px 8px 20px 8px;
-    }
-}
-
+		.navbar-brand {
+			margin: auto;
+		}
+		.bio-text,
+		.pricing-text {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.pricing-container,
+		.form-container,
+		.testimonials-header,
+		.testimonials-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		.social-container {
+			text-align: center;
+		}
+		.center-form {
+			padding-top: 20px;
+			min-height: 240px;
+		}
+		.features-card,
+		.process-cards {
+			display: block;
+			padding: 20px 8px 20px 8px;
+		}
+	}
 @media only screen and (max-width: 575px) {
-
-    .hide-mobile{
-
-        display: none;
-
-    }
-}
-
-
+		.hide-mobile {
+			display: none;
+		}
+	}
