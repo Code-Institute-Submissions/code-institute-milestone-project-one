@@ -271,25 +271,15 @@ footer{
 
 }
 
-
-.services-button{
-    font-family: "PT Sans", sans-serif;
-    background-color:rgba(255, 255, 255, 0.8);
-    color: #000;
-    margin: 0 auto;
-    display: block;
-    float: right;
-}
-
-.contact-button{
-    font-family: "PT Sans", sans-serif;
-    background-color:rgba(255, 255, 255, 0.8);
-    color: #000;
-    margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 57px;
-    display: inline-block;
-
+.btn{
+    min-width: 200px;
+    min-height: 70px;
+    padding: 35px;
+    margin: auto;
+    background-color: #1A2226;
+    font-size: 19px;
+    color: #fafafa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
 
 
@@ -298,46 +288,24 @@ footer{
 /*-----------FEATURES-------------*/
 
 
-.features{
-
-
-
-  background:
-    /* top, transparent  */
-    linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
-    ),
-
-    url(../images/mix-desk-stock-img2.jpg);
-    background-size: cover;
-    padding: 70px 50px 0px 50px;
+.features-card{  
+    padding: 20px 80px 20px 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 0 auto;
     }
 
-.feature-heading{
+.features-text{
 
+    padding: 15px 5px 0px 5px;
     font-family: "PT Sans", sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
-    color: #fafafa;
+    color: #212529;
     text-align: center;
-    margin-bottom: 40px;
+   
 
 }
 
-.feature-text{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 100;
-    text-shadow: 2px 2px #000;
-    text-transform: none;
-}
-
-/*.feature i{
-    margin-bottom: 20px;
-    font-size: 45px;
-    line-height: 45px;
-}
 
 
 /*-----------/FEATURES-------------*/
@@ -379,7 +347,7 @@ footer{
 }
 
 
-.card{
+.testimonials-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 10px 15px 10px 15px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -406,9 +374,6 @@ footer{
 
 
 
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
 
 
 
@@ -546,10 +511,7 @@ display: block;
 
 
 .center-form {
-
     margin: 0 auto;
-
-
 }
 
 button[type="submit"] {
@@ -627,10 +589,10 @@ button[type="submit"] {
 
     }
 
-
+    .features-card,
     .process-cards{
         display: block;
-        margin-bottom: 5PX;
+      
         padding: 20px 8px 20px 8px;
     }
 }
