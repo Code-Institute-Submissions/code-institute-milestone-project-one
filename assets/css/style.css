@@ -67,7 +67,7 @@ hr {
 
 .credits-body-container {
 	margin-bottom: 130px;
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh - 180px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img.jpg) no-repeat center;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -77,9 +77,9 @@ hr {
 }
 
 .contact-body-container {
-    padding-bottom: 300px;
+  
 	margin-bottom: 130px;
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh - 180px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -382,8 +382,7 @@ td {
 
 .table-container {
 	min-height: 300px;
-	
-	margin: 30px 30px 30px 30px;
+	margin: 30px 130px 30px 130px;
 }
 
 .credits-header {
@@ -417,7 +416,7 @@ tbody {
 }
 
 .form-container {
-	padding: 80px 80px 80px 80px;
+	padding: 80px 200px 80px 200px;
 }
 
 
@@ -467,6 +466,11 @@ button[type="submit"] {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+    .table-container{
+        margin: 30px;
+    }
+
 	.bio-container,
 	.pricing-container,
 	.form-container,
