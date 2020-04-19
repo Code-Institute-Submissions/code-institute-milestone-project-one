@@ -45,7 +45,7 @@ hr {
 	margin-bottom: 135px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/daryl-full-desk.jpg) no-repeat center center;
-	background-size: contain;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -58,7 +58,7 @@ hr {
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
     object-fit: cover;
-	background-size: contain;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -69,7 +69,7 @@ hr {
 	margin-bottom: 130px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img.jpg) no-repeat center;
-	background-size: contain;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -81,7 +81,7 @@ hr {
 	margin-bottom: 130px;
 	min-height: calc(100vh - 200px);
 	background: linear-gradient( rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/mix-desk-stock-img2.jpg) no-repeat;
-	background-size: contain;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -129,6 +129,9 @@ footer {
 	text-decoration: none;
 	font-weight: 200;
 	text-align: center;
+}
+.quick-links a:hover{
+    color: #4f5b62;
 }
 
 .footer-heading,
@@ -476,6 +479,11 @@ button[type="submit"] {
 		padding-top: 20px;
 		min-height: 240px;
 	}
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+    transform: unset;
+    }
     
 }
 
