@@ -57,6 +57,8 @@ Unsplash.com for one avatar and two background images, FontAwesome.com for icons
 
 * The site was tested and working in several browsers; Google Chrome, Mozilla Firefox, Apple Safari and Microsoft Edge.
 
+* Internet Explorer was as expected, the browser that caused issues for the site. My background-size rules in my CSS were not set correctly to contain for them to display properly on IE. Also an issue with the card elements where they were not shaped correctly and used flex-basis:100%; to sit them properly in the browser window, and this solved the issues on the site caused by IE.
+
 * In order to ensure that moving around the site is at full capacity, I checked every link on the Navigation bar and Footer on each page to guarantee they direct to the correct page. The same test was carried out on the Landing page buttons. 
 
 * The embedded media player plays with no issues at every responsive screen size from Mobile (small) to 4K (large) in Google Chrome DevTools. 
