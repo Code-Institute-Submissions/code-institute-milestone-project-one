@@ -7,15 +7,15 @@
 
 ## Overview 
 
-This site is aimed at making it incredibly simple for professional in the Music Industry to hire Daryl Johnson as their next mix or recording engineer. With efficient, stately UI choices preventing what would be a very crowded site otherwise, the user arrives on the lading page and instantly can fulfil their purpose for being there. The site, supplemented with Bootstrap, is completely responsive and behaves exactly as it should from large 1440x1044 displays to smaller mobile screens at 320x679.
+This site is aimed at making it incredibly simple for professional in the Music Industry to hire Daryl Johnson as their next mix or recording engineer. With efficient, stately UI choices preventing what would be a very crowded site otherwise, the user arrives on the landing page and instantly can fulfill their purpose for being there. The site, supplemented with Bootstrap, is completely responsive and behaves as it should from large displays to smaller mobile screens.
 
-When choosing a style to pursue for this project, it felt natural to choose a subject that came pre-loaded with assets and content, rather than trying to procure my own. I chose to create a website for Daryl Johnson because, I wanted to try a different approach than my initial/simplest idea for the submission (which was a portfolio for my own web design career). I tried to approach the project as if it was a real-world freelance situation, to develop good habits in Web Development for a future career.
+When choosing a style to pursue for this project, it felt natural to choose a subject that came pre-loaded with assets and content, rather than trying to procure my own. I chose to create a website for Daryl Johnson because, I wanted to try a different approach than my initial/simplest idea for the submission (which was a portfolio for my own web design career). I tried to approach the project as if it was a real-world freelance situation, to develop good habits in web development for a future career.
 
 ## UI/UX
 
 Here is a link to the wireframe I created using Balsamiq for this site: https://pdfhost.io/edit?doc=44ea32a5-c665-47c4-96f7-3f84b68aa26d (also uploaded to docs directory in repository)
 
-Having done market research on other freelance engineer sites, I found many of them cluttered, and too crammed with text and features, which is exactly what I wanted to avoid. The landing page on my site is designed in a way to present exactly what the user would need to see; an image of the product (Daryl in this case), a CTA in a jumbotron to entice the user, and two buttons taking them to the most pertinent page of the site, maximising efficiency as much as possible. 
+Having done market research on other freelance engineer sites, I found many of them cluttered, and too crammed with text and features, which I wanted to avoid. The landing page on my site is designed in a way to present exactly what the user would need to see; an image of the product (Daryl in this case), a CTA in a jumbotron to entice the user, and two buttons taking them to the most pertinent page of the site, maximising efficiency as much as possible. 
 
 I had already decided that I wanted to create a multi-page site, as I wanted to test myself for the first time in organising my directory files in GitPod. It was a welcome challenge from the simple sites I had made before to work with much larger amounts of code, and I endeavoured to use commenting in my HTML and CSS to split up areas and make it easier to read. I utilised Bootstrap for sections of this site as I find the class system incredibly intuitive, but I was cautious of leaning too heavily on their styling and used my own design ideas as much as possible to created a personal style. When speaking with Daryl (the 'client' in this case), he told me that a dark, bespoke UI was what he wanted, and I reflected this in the stately green primary colours, and header font (Roboto Slab). A site of this type, naturally has a lot of important information that needs to be conveyed, so to break up the text and stop cognitive overload, I used Bootstrap cards to separate blocks of text becoming too tiring to read. 
 
@@ -29,10 +29,10 @@ I had already decided that I wanted to create a multi-page site, as I wanted to 
 
 ## Features
 * Navigation bar with page links (ALL PAGES) - Allows users to reach all available pages on the site, collapses to a "hamburger" menu on smaller screens so the UI is not cluttered.
-* Footer (ALL PAGES) - The "quick links" page menu, social icon links and copyright text box, fixed to the bottom of the screen, allows users to easily navigate without going back up to the navigation bar. Recognisable social icons easily display without labels, which site they direct to. 
+* Footer (ALL PAGES) - The "quick links" page menu, social icon links and copyright text box, fixed to the bottom of the screen, allows users to easily navigate without going back up to the navigation bar. Recognisable social icons display which site they direct to. 
 
 * Landing Page CTA/Buttons - Immediately tells the user what the site is about and allows them to navigate directly to the corresponding pages.
-* About.html Features and Testimonials cards - These were used to break up what would other wise be a very fatiguing, text-heavy site, preventing cognitive overload.
+* About page Features and Testimonials cards - These were used to break up what would other wise be a very fatiguing, text-heavy site, preventing cognitive overload.
 * Hover.css - A third party hover "grow" animation applied to Nav items and cards. This gives the site a tactile, responsive feel and keeps the user interested. 
 * Credits page table element - Used for the ability to scroll through the data (mix engineer credits) without taking up too much screen real estate and making the page tiring to look at. 
 * Credits page video container - Embeded youtube videos, allowing users to hear examples of Daryl's work without leaving the site.
@@ -67,7 +67,7 @@ Unsplash.com for one avatar and two background images, FontAwesome.com for icons
 
 ## Responsive Design Testing
 
-Even with the nature of Bootstrap naturally catering to responsive web development, I still heavily customised the Bootstrap elements that I used and as such diligently tested the site at as many screen sizes as possible. For this is first tried it on my own varying screens but predominantly I used Chrome DevTools Device Toolbar to visualise the site at every size, everything from 4K displays & iPad Pro to the smallest mobile view available and adjusted element margins and padding accordingly. This was in order to keep the UI clean and avoid clutter at smaller sizes. For example, the navigation bar menu collapses into a recognisable icon dropdown, and the footer closes down to just the social media links to prevent it having too much height on the screen. In addition, the horizontally arranged cards on the About and Services pages transition to displaying vertically. 
+Even with the nature of Bootstrap naturally catering to responsive web development, I still heavily customised the Bootstrap elements that I used and as such diligently tested the site at as many screen sizes as possible. For this I first tried it on my own varying screens but predominantly used Chrome DevTools Device Toolbar to visualise the site at every size, everything from 4K displays & iPad Pro to the smallest mobile view available and adjusted element margins and padding accordingly. This was in order to keep the UI clean and avoid clutter at smaller sizes. For example, the navigation bar menu collapses into a recognisable dropdown version, and the footer closes down to just the social media links to prevent it having too much height on the screen. In addition, the horizontally arranged cards on the About and Services pages transition to displaying vertically. 
 
 ## Deployment
 
