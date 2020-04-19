@@ -55,6 +55,8 @@ Unsplash.com for one avatar and two background images, FontAwesome.com for icons
 
 ## Testing 
 
+* The site was tested and working in several browsers; Google Chrome, Mozilla Firefox, Apple Safari and Microsoft Edge.
+
 * In order to ensure that moving around the site is at full capacity, I checked every link on the Navigation bar and Footer on each page to guarantee they direct to the correct page. The same test was carried out on the Landing page buttons. 
 
 * The embedded media player plays with no issues at every responsive screen size from Mobile (small) to 4K (large) in Google Chrome DevTools. 
